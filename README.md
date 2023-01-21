@@ -1,16 +1,8 @@
-# auto_scroll_listview
+# Auto Scroll ListView
 
 A new Flutter project.
 
-## Getting Started
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/76887699/213862428-a22bd881-d04d-4c6d-a897-1d9ae7b91300.png" width="250" height="450" />
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</p>
