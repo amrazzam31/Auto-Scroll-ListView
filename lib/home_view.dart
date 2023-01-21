@@ -24,6 +24,7 @@ class _HomeViewState extends State<HomeView> {
       double maxScrollExtend2 = _scrollController2.position.maxScrollExtent;
       double minScrollExtend3 = _scrollController3.position.minScrollExtent;
       double maxScrollExtend3 = _scrollController3.position.maxScrollExtent;
+
       animateToRightLeft(
         max: maxScrollExtend1,
         min: minScrollExtend1,
@@ -62,17 +63,19 @@ class _HomeViewState extends State<HomeView> {
       duration: Duration(seconds: duration),
       curve: Curves.linear,
     )
-        .then((value) {
-      direction = direction == max ? min : max;
+        .then(
+      (value) {
+        direction = direction == max ? min : max;
 
-      animateToRightLeft(
-        max: max,
-        min: min,
-        direction: direction,
-        duration: duration,
-        scrollController: scrollController,
-      );
-    });
+        animateToRightLeft(
+          max: max,
+          min: min,
+          direction: direction,
+          duration: duration,
+          scrollController: scrollController,
+        );
+      },
+    );
   }
 
   @override
@@ -97,12 +100,18 @@ class _HomeViewState extends State<HomeView> {
               scrollController: _scrollController3,
               images: images3,
             ),
+            const SizedBox(
+              height: 60,
+            ),
             const Text(
               "30 days for free",
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            const SizedBox(
+              height: 60,
             ),
             Material(
               color: const Color(0xfff2c94c),
